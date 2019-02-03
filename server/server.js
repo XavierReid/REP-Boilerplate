@@ -8,7 +8,7 @@ app.use(express.static('dist')); // For Production
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send('Hello World');
 });
 
